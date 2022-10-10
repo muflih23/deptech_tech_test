@@ -67,7 +67,7 @@ class _LoginFormState extends State<LoginForm> {
             ),
             const SizedBox(height: 128,),
             LongButton(action: () {
-              Navigator.of(context).push(
+              Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
                   builder: ((context) => Home(
                     feedback: () {
