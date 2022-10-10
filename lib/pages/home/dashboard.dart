@@ -1,5 +1,6 @@
 import 'package:deptech_flutter_reminder/components/texts.dart';
 import 'package:deptech_flutter_reminder/pages/home/notifications.dart';
+import 'package:deptech_flutter_reminder/pages/home/profile.dart';
 import 'package:deptech_flutter_reminder/utils/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -43,8 +44,8 @@ class _HomeState extends State<Home> {
               Icons.notifications_outlined
             ),
             onPressed: () {
-                  Navigator.of(context).push(
-                  MaterialPageRoute(
+              Navigator.of(context).push(
+                MaterialPageRoute(
                   builder: ((context) => const NotificationPage())
                 )
               );
@@ -57,7 +58,13 @@ class _HomeState extends State<Home> {
             icon: const Icon(
               Icons.settings_outlined
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: ((context) => const ProfilePage())
+                )
+              );
+            },
           ),
           const SizedBox(width: 16)
         ],
