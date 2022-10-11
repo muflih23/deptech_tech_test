@@ -44,7 +44,7 @@ class _DropDownInputState extends State<DropDownInput> {
           );
         }).toList(),
         decoration: InputDecoration(
-            label: Text(widget.text, style: TextStyle(color: primaryText),),
+            label: Text(widget.text, style: TextStyle(color: primaryText, fontSize: 20),),
             hintStyle: const TextStyle(
               fontWeight: FontWeight.w500,
               fontSize: 16,
